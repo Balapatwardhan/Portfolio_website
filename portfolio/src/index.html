@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Bala D Patwardhan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <script>
+        function openModal() {
+            document.getElementById("taskUpModal").style.display = "block";
+        }
+        
+        function closeModal() {
+            document.getElementById("taskUpModal").style.display = "none";
+        }
+        
+        function openModal1() {
+            document.getElementById("taskUpModal1").style.display = "block";
+        }
+        
+        function closeModal1() {
+            document.getElementById("taskUpModal1").style.display = "none";
+        }
+     
+        // Appointment Booking System Modal
+        function openModal2() {
+            document.getElementById("appointmentModal").style.display = "flex";
+        }
+        
+        function closeModal2() {
+            document.getElementById("appointmentModal").style.display = "none";
+        }
+
+        // Bowling Alley Management System Modal
+        function openModal3() {
+            document.getElementById("bowlingModal").style.display = "flex";
+        }
+        
+        function closeModal3() {
+            document.getElementById("bowlingModal").style.display = "none";
+        }
+
+        // Close modal when clicking outside the content
+        window.onclick = function(event) {
+            let modals = document.querySelectorAll(".modal");
+            modals.forEach(modal => {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            });
+        };
+    </script>
+
+    <header>
+        <div class="header-content">
+            <img src="images/profile_bala.jpg" alt="Bala D Patwardhan" class="profile-pic">
+            <div class="header-text">
+                <h1>Bala D Patwardhan - Web Developer</h1>
+                <p>A creative IT enthusiast passionate about building impactful solutions. With expertise in web development, UI/UX design, and database management. I thrive on problem-solving and innovation. Beyond tech, I engage in leadership roles and creative pursuits, always seeking to blend technology with creativity. Eager to learn, collaborate, and make a difference.</p>
+            </div>
+            <div class="contact-section">
+                <h2>Contact Me</h2>
+                <div class="contact-links">
+                    <a href="https://github.com/Balapatwardhan" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/bala-patwardhan-706765268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="mailto:your.email@gmail.com"><i class="fas fa-envelope"></i> your.email@gmail.com</a>
+                    <a href="tel:+1234567890"><i class="fas fa-phone"></i>91+ 9764698255</a>
+                    <a href="images\resume_bala2.pdf" download class="download-resume">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <button>React</button>
+            <button>HTML</button>
+            <button>CSS</button>
+            <button>JavaScript</button>
+            <button>Express</button>
+            <button>Problem Solving</button>
+            <button>Communication</button>
+            <button>Adaptability</button>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        
+        <div class="project-container">
+    
+            <!-- Smart Task Tracker Project -->
+            <div class="project" onclick="openModal()">
+                <img src="images/task1.jpg" alt="Smart Task Tracker">
+                <h3>Smart Task Tracker</h3>
+                <p>A productivity-boosting task manager with AI-powered insights, habit analysis, and gamification to enhance efficiency.</p>
+                <div class="tech-stack">
+                    <button>Figma</button>
+                    <button>React</button>
+                    <button>Express</button>
+                    <button>Flask</button>
+                    <button>MongoDB</button>
+                    <button>Gamification</button>
+                </div>
+            </div>
+            
+            <!-- Smart Task Tracker Modal -->
+            <div id="taskUpModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    
+                    <!-- Text content first -->
+                    <div class="modal-text">
+                        <h3>Smart Task Tracker</h3>
+                        <p>A productivity-boosting task manager with AI-powered insights and gamification.</p>
+                        <ul>
+                            <li>🔹 AI-powered insights for task analysis</li>
+                            <li>🔹 Gamification elements for motivation</li>
+                            <li>🔹 Habit tracking to improve efficiency</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Images after text -->
+                    <div class="modal-images">
+                        <img src="images/task1.jpg" alt="Task Up UI 1">
+                        <img src="images/task2.jpg" alt="Task Up UI 2">
+                        <img src="images/task3.jpg" alt="Task Up UI 3">
+                        <img src="images/task4.jpg" alt="Task Up UI 4">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Churn Shield Project -->
+            <div class="project" onclick="openModal1()">
+                <img src="images/bank1.jpg" alt="Churn Shield">
+                <h3>Churn Shield - Bank Churn Management System</h3>
+                <p>Built with React and Django, this system helps banks manage customers, predict churn, and visualize churn rates.</p>
+                <div class="tech-stack">
+                    <button>React</button>
+                    <button>Django</button>
+                    <button>SQLite</button>
+                    <button>Data Visualization</button>
+                </div>
+            </div>
+            
+            <!-- Churn Shield Modal -->
+            <div id="taskUpModal1" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal1()">&times;</span>
+                    
+                    <!-- Text content first -->
+                    <div class="modal-text">
+                        <h3>Churn Shield - Bank Churn Management System</h3>
+                        <p>A system that helps banks predict and prevent customer churn using data-driven insights.</p>
+                        <ul>
+                            <li>🔹 AI-powered insights for task analysis</li>
+                            <li>🔹 Gamification elements for motivation</li>
+                            <li>🔹 Habit tracking to improve efficiency</li>
+                            <li>🔹 Churn Prediction: Identifies customers at risk of leaving</li>
+                            <li>🔹 Data Visualization: Displays trends with interactive charts</li>
+                            <li>🔹 User & Risk Management: Helps banks take preventive actions</li>
+                            <li>🔹 Tech Stack: React, Django, SQLite, Data Visualization</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Images after text -->
+                    <div class="modal-images">
+                        <img src="images/bank1.jpg" alt="Churn Shield UI 1">
+                        <img src="images/bank2.jpg" alt="Churn Shield 2">
+                        <img src="images/bank4.jpg" alt="Churn Shield 3">
+                        <img src="images/bank6.jpg" alt="Churn Shield 4">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Appointment Booking System -->
+            <div class="project" onclick="openModal2()">
+                <h3>Appointment Booking System</h3>
+                <p>A web-based system using PHP, HTML, CSS, and MySQL that allows users to book, view, and manage appointments efficiently.</p>
+                <div class="tech-stack">
+                    <button>PHP</button>
+                    <button>MySQL</button>
+                    <button>HTML & CSS</button>
+                </div>
+            </div>
+
+            <!-- Modal for Appointment Booking System -->
+            <div id="appointmentModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal2()">&times;</span>
+                    
+                    <div class="modal-body">
+                        <div class="modal-text">
+                            <h3>Appointment Booking System</h3>
+                            <p>A system designed to streamline scheduling and appointment management for users and administrators.</p>
+                            <ul>
+                                <li>🔹 User registration & authentication</li>
+                                <li>🔹 Appointment booking with date and time selection</li>
+                                <li>🔹 Admin panel for managing bookings</li>
+                                <li>🔹 Email notifications for appointment confirmations</li>
+                                <li>🔹 Database integration using MySQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bowling Alley Management System -->
+            <div class="project" onclick="openModal3()">
+                <h3>Bowling Alley-Management System</h3>
+                <p>A backend project using Express, Supabase, and Prisma Studio for managing bowling slot bookings and approvals.</p>
+                <div class="tech-stack">
+                    <button>Express</button>
+                    <button>Supabase</button>
+                    <button>Prisma Studio</button>
+                </div>
+            </div>
+
+            <!-- Modal for Bowling Alley Management System -->
+            <div id="bowlingModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal3()">&times;</span>
+                    
+                    <div class="modal-body">
+                        <div class="modal-text">
+                            <h3>Bowling Alley-Management System</h3>
+                            <p>A backend system for managing bowling lane bookings, user registrations, and staff approvals.</p>
+                            <ul>
+                                <li>🔹 User registration & lane booking</li>
+                                <li>🔹 Admin dashboard to approve or reject bookings</li>
+                                <li>🔹 Integration with Supabase for real-time database management</li>
+                                <li>🔹 Session tracking & automated reminders</li>
+                                <li>🔹 Secure API handling with Express.js</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Bala D Patwardhan. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
